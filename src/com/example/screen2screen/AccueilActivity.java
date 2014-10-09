@@ -5,37 +5,36 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.View.OnClickListener;
 import android.widget.Button;
 
-public class AccueilActivity extends Activity{
-	
+public class AccueilActivity extends Activity implements OnClickListener{
+
 	private Button host;
 	private Button connect;
 	private Button option;
 	private Button quit;
-	
-	
+
+
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.accueil_activity);
-	
+
 		host = (Button) findViewById(R.id.host);
 		connect = (Button) findViewById(R.id.connect);
 		option = (Button) findViewById(R.id.option);
 		quit = (Button) findViewById(R.id.quit);
-		
-		quit.setOnClickListener(new View.OnClickListener() {
-			
-			@Override
-			public void onClick(View v) {
-				System.exit(0);
-			}
-		}); 
-			
-		
-		
-		
+
+
+		host.setOnClickListener(this); 
+		connect.setOnClickListener(this); 
+		option.setOnClickListener(this); 
+		quit.setOnClickListener(this); 
+
+
+
+
 	}
 
 	@Override
@@ -55,5 +54,23 @@ public class AccueilActivity extends Activity{
 			return true;
 		}
 		return super.onOptionsItemSelected(item);
+	}
+
+	@Override
+	public void onClick(View v) {
+		switch (v.getId()) {
+		case R.id.host:
+			// do something
+			break;
+		case R.id.connect:
+			// do something else
+			break;
+		case R.id.option:
+			// i'm lazy, do nothing
+			break;
+		case R.id.quit:
+			System.exit(0);
+			break;
+		}
 	}
 }
