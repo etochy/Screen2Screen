@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Screen2Screen</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    
+    <string name="title">Screen 2 Screen</string>
+    <string name="host">Heberger</string>
+    <string name="connect">Se connecter</string>
+    <string name="option">Options</string>
+    <string name="quit">Quitter</string>
+    
+</resources>
