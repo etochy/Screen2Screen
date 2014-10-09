@@ -70,6 +70,7 @@ public class AccueilActivity extends Activity implements OnClickListener{
 			break;
 		case R.id.option:
 			ouvrirOption();
+			System.exit(0);
 			break;
 		case R.id.quit:
 			System.exit(0);
