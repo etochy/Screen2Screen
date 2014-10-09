@@ -11,4 +11,6 @@
     <string name="option">Options</string>
     <string name="quit">Quitter</string>
     
+    <string name="retourmenu"> Retour menu</string>
+    
 </resources>

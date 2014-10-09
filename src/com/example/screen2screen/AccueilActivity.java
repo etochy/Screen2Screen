@@ -1,6 +1,7 @@
 package com.example.screen2screen;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -10,6 +11,8 @@ import android.widget.Button;
 
 public class AccueilActivity extends Activity implements OnClickListener{
 
+	private Intent intent;
+	
 	private Button host;
 	private Button connect;
 	private Button option;
@@ -66,11 +69,16 @@ public class AccueilActivity extends Activity implements OnClickListener{
 			// do something else
 			break;
 		case R.id.option:
-			// i'm lazy, do nothing
+			ouvrirOption();
 			break;
 		case R.id.quit:
 			System.exit(0);
 			break;
 		}
+	}
+	
+	private void ouvrirOption() {
+		intent = new Intent(this, OptionActivity.class);
+		startActivity(intent);
 	}
 }
