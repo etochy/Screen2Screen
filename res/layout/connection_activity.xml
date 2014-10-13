@@ -27,7 +27,7 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp"
-        android:text="Se connecter"
+        android:text="@string/connect"
         android:textColor="#FFFFFF"
         android:textSize="20sp" />
 
@@ -39,7 +39,8 @@
         android:layout_alignParentBottom="true"
         android:layout_marginBottom="5dp"
         android:background="@drawable/bouton"
-        android:text="Connexion" />
+        android:textColor="@drawable/text"
+        android:text="@string/connect" />
 
     <Button
         android:id="@+id/buttonReturn"
@@ -49,6 +50,7 @@
         android:layout_alignRight="@+id/list"
         android:layout_marginBottom="5dp"
         android:background="@drawable/bouton"
-        android:text="Retour" />
+        android:textColor="@drawable/text"
+        android:text="@string/retourmenu" />
 
 </RelativeLayout>
