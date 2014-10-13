@@ -66,7 +66,8 @@ public class AccueilActivity extends Activity implements OnClickListener{
 			// do something
 			break;
 		case R.id.connect:
-			// do something else
+			ouvrirConnect();
+			System.exit(0);
 			break;
 		case R.id.option:
 			ouvrirOption();
@@ -80,6 +81,10 @@ public class AccueilActivity extends Activity implements OnClickListener{
 	
 	private void ouvrirOption() {
 		intent = new Intent(this, OptionActivity.class);
+		startActivity(intent);
+	}
+	private void ouvrirConnect(){
+		intent = new Intent(this, ConnectionActivity.class);
 		startActivity(intent);
 	}
 }

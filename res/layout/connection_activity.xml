@@ -1,0 +1,54 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.screen2screen.ConnectionActivity"
+    tools:ignore="MergeRootFrame" 
+    android:background="#1A2A99">
+
+    <ExpandableListView
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true" 
+        android:layout_marginTop="70dp"
+        android:layout_marginBottom="60dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/liste">
+    </ExpandableListView>
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Se connecter"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/buttonConn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/list"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/bouton"
+        android:text="Connexion" />
+
+    <Button
+        android:id="@+id/buttonReturn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/list"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/bouton"
+        android:text="Retour" />
+
+</RelativeLayout>
