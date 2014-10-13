@@ -33,7 +33,7 @@ public class ConnectionActivity extends Activity implements OnClickListener{
 		list.setGroupIndicator(null);
 		list.setChildIndicator(null);
 
-		String[] titles = {"Téléphone Esteban","Téléphone B","Téléphone C"};
+		String[] titles = {"TÃ©lÃ©phone Esteban","TÃ©lÃ©phone B","TÃ©lÃ©phone C"};
 		String[] fruits = {"a1","a2"};
 		String[] veggies = {"b1","b2","b3"};
 		String[] meats = {"c1","c2"};
@@ -79,6 +79,18 @@ public class ConnectionActivity extends Activity implements OnClickListener{
 	private void ouvrirAccueil() {
 		intent = new Intent(this, AccueilActivity.class);
 		startActivity(intent);
+	}
+		public String[] arrayToTab(ArrayList l){
+		
+		String[] tab = new String[l.size()];
+		int i =0;
+		while(i<l.size()){
+			tab[i]=((BluetoothDevice) l.get(i)).getName();
+			i++;
+		}
+		
+		return tab;
+		
 	}
 }
 
