@@ -11,7 +11,10 @@
         android:width="1dp"
         android:color="#000000" >
     </stroke>
-
+    <padding
+	android:left="30dp">
+        
+    </padding>
     <!-- Here is the corner radius -->
     <corners android:radius="30dp" >
     </corners>

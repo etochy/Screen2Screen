@@ -1,7 +1,10 @@
 package com.example.screen2screen;
 
 
+import java.util.ArrayList;
+
 import android.app.Activity;
+import android.bluetooth.BluetoothDevice;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
@@ -80,5 +83,17 @@ public class ConnectionActivity extends Activity implements OnClickListener{
 		intent = new Intent(this, AccueilActivity.class);
 		startActivity(intent);
 	}
+	public String[] arrayToTab(ArrayList l){
+		
+	String[] tab = new String[l.size()];
+	int i =0;
+	while(i<l.size()){
+		tab[i]=((BluetoothDevice) l.get(i)).getName();
+		i++;
+	}
+	
+	return tab;
+	
+}
 }
 

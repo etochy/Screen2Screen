@@ -42,4 +42,5 @@ public class OptionActivity extends Activity implements OnClickListener {
 		intent = new Intent(this, AccueilActivity.class);
 		startActivity(intent);
 	}
+	
 }
