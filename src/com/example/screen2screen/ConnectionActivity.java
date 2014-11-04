@@ -74,15 +74,12 @@ public class ConnectionActivity extends Activity implements OnClickListener{
 	public void onClick(View v) {
 		switch (v.getId()) {
 		case R.id.buttonReturn:
-			ouvrirAccueil();
 			System.exit(0);
 			break;
 		}
 	}
-	private void ouvrirAccueil() {
-		intent = new Intent(this, AccueilActivity.class);
-		startActivity(intent);
-	}
+	
+	
 	public String[] arrayToTab(ArrayList l){
 		
 	String[] tab = new String[l.size()];

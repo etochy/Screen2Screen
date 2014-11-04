@@ -31,16 +31,10 @@ public class OptionActivity extends Activity implements OnClickListener {
 		// TODO Auto-generated method stub
 		switch (v.getId()) {
 		case R.id.retourmenu:
-			ouvrirAccueil();
 			System.exit(0);
 			break;
 		}
 
-	}
-	
-	private void ouvrirAccueil() {
-		intent = new Intent(this, AccueilActivity.class);
-		startActivity(intent);
 	}
 	
 }
