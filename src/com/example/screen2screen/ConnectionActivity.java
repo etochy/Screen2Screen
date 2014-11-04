@@ -30,7 +30,7 @@ public class ConnectionActivity extends Activity implements OnClickListener{
 		conn = (Button) findViewById(R.id.buttonConn);
 		buttonReturn = (Button)findViewById(R.id.buttonReturn);
 
-		
+
 
 
 		list.setGroupIndicator(null);
@@ -78,19 +78,17 @@ public class ConnectionActivity extends Activity implements OnClickListener{
 			break;
 		}
 	}
-	
-	
-	public String[] arrayToTab(ArrayList l){
-		
-	String[] tab = new String[l.size()];
-	int i =0;
-	while(i<l.size()){
-		tab[i]=((BluetoothDevice) l.get(i)).getName();
-		i++;
-	}
-	
-	return tab;
-	
-}
-}
 
+	public String[] arrayToTab(ArrayList l){
+
+		String[] tab = new String[l.size()];
+		int i =0;
+		while(i<l.size()){
+			tab[i]=((BluetoothDevice) l.get(i)).getName();
+			i++;
+		}
+
+		return tab;
+
+	}
+}
